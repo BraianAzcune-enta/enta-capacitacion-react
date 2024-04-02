@@ -1,0 +1,161 @@
+html,
+#root {
+  height: calc(100% - 4px);
+  font-size: 87.5%; //14px
+}
+
+body {
+  height: 100%;
+}
+
+.bombas-h-100 {
+  height: 100%;
+}
+
+.no-padding-container {
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.login-center-container {
+  max-width: 800px;
+  height: 700px;
+}
+
+// .k-animation-container {
+//   z-index: 10003 !important
+// }
+// .k-dialog-wrapper {
+//    z-index: 10003 !important
+// }
+
+//modificamos el textbox de kendo para que siempre use el width completo del div donde este almacenado
+.k-textbox-container {
+  width: "100% !important";
+}
+
+// KendoReact theme
+$font-size: 12.25px;
+$input-font-size: 14px;
+$cell-padding-x: 4px;
+$cell-padding-y: 4px;
+$grid-header-padding-y: $cell-padding-y; //está hardcoded en kendo
+
+// @import "node_modules/@progress/kendo-theme-bootstrap/dist/all.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//GRID
+//HEADER
+.k-grid-header .k-header {
+  white-space: normal;
+  vertical-align: bottom;
+}
+
+.k-grid .k-cell-inner .k-grid-header-menu {
+  position: static;
+  margin-inline-end: 0%;
+}
+
+.k-column-resizer {
+  z-index: 10000;
+  width: 0.3em;
+}
+
+.k-header > div > div {
+  position: absolute;
+  bottom: $grid-header-padding-y;
+}
+
+.k-grid {
+  overflow: hidden;
+}
+
+.pt-90 {
+  padding-top: 0.9rem !important;
+}
+.form-label[aria-required="true"]:after {
+  content: " *";
+  color: red;
+}
+
+.my-modal {
+  min-width: 100%;
+  height: 100%;
+}
+.modal {
+  z-index: 1000 !important;
+}
+.modal-backdrop {
+  z-index: 950 !important;
+}
+
+.modal-content-large {
+  width: 90% !important;
+  height: 90%;
+}
+
+.modal-content-mid {
+  width: 70% !important;
+  height: 80%;
+}
+
+.modal-content-sm {
+  width: 50% !important;
+  height: 80%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+//FIN HEADER
+//FIN GRID
+
+// Combobox items por pagina - Elimino display flex, no se ve bien el numeor
+.k-picker-solid {
+  background-color: white;
+  // opacity: 0;
+}
+.k-disabled {
+  background-color: #d7d9db;
+}
+input[aria-disabled="true"] {
+  background-color: #d7d9db;
+}
+
+div[aria-required="true"] {
+  & span > span.k-label:after,
+  label.k-label:after {
+    content: " *";
+    color: red;
+  }
+}
+
+#UserOpcion {
+  display: flex;
+  align-items: center;
+  gap: 2;
+}
+
+.k-animation-container {
+  z-index: 10003 !important; // set the desired value based on the application requirements
+}
+
+.k-multiselect {
+  width: 100% !important;
+}
+// Generate series of `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+.textCard {
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+}
+
+.form-check-input {
+  border-color: #000 !important;
+}
