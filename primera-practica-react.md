@@ -9,7 +9,7 @@ Debe validar solo numeros, hacer la operacion y dar el resultado.
     # 2.- En el cual se debe generar la feature con el siguiente orden de carpetas.
         # 1.- componentes // carpeta que contiene elementos que conforman la feature 
         # 2.- model // carpeta que contiene archivo para exportar los datos del tipeado de los modelos usado para el feature
-        # 3.- api // carpeta que contiene uso de peticiones api
+        # 3.- rest // carpeta que contiene uso de peticiones api
         # 4.- hooks // carpeta que contiene funciones hooks para el feature solamente 
         # 5.- common // carpeta que contiene ruta, datos constantes, ...etc, de uso para el feature
         # 6.- store // carpeta para manejo de estado //en el caso de usar redux.
